@@ -7,9 +7,9 @@
 Adafruit_SHT31 sht31 = Adafruit_SHT31();
 
 #define SCREEN_WIDHT 128
-#define SCREEN_HIGHT 64
+#define SCREEN_HEIGHT 64
 #define OLED_I2C_ADDRESS 0x3C
-Adafruit_SSD1306 display(SCREEN_WIDHT,SCREEN_HIGHT,&Wire,-1);
+Adafruit_SSD1306 display(SCREEN_WIDHT,SCREEN_HEIGHT,&Wire,-1);
 
 RTC_DS3231 rtc;
 
