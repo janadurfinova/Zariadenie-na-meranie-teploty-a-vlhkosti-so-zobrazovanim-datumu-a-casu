@@ -14,7 +14,7 @@ Adafruit_SSD1306 display(SCREEN_WIDHT,SCREEN_HEIGHT,&Wire,-1);
 RTC_DS3231 rtc;
 
 unsigned long lastControl = 0;
-unsigned long intervalControl = 1000; 
+unsigned long intervalControl = 1000;
 
 void displej(int x, int y, String text){
   display.setCursor(x,y);
