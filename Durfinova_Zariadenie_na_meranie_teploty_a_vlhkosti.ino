@@ -89,7 +89,7 @@ void loop() {
     lastSerial = millis();
     display.fillRect(1, 50, 128,10, SSD1306_BLACK);
     DateTime now = rtc.now();
-    //zobrazenie dátumu na sériovom monitore
+    //zobrazenie času na sériovom monitore
     Serial.print(now.hour() < 10 ? "0" : "");
     Serial.print(now.hour());
     Serial.print(":");
@@ -99,7 +99,7 @@ void loop() {
     Serial.print(now.second() < 10 ? "0" : "");
     Serial.println(now.second());
 
-    //zobrazenie dátumu
+    //zobrazenie dátumu na displej
     display.setCursor(5,40);
     display.print(now.day());
     display.print(".");
@@ -107,7 +107,7 @@ void loop() {
     display.print(".");
     display.print(now.year());
 
-    //zobrazenie času
+    //zobrazenie času na displej
     display.setCursor(5,50);
     display.print(now.hour() < 10 ? "0" : "");
     display.print(now.hour());
