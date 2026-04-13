@@ -87,7 +87,7 @@ void loop() {
   static unsigned long lastSerial = 0;
   if(millis() - lastSerial >= 500){
     lastSerial = millis();
-    display.fillRect(1, 50, 128,10, SSD1306_BLACK);
+    display.fillRect(0, 50, 128,10, SSD1306_BLACK);
     DateTime now = rtc.now();
     //zobrazenie času na sériovom monitore
     Serial.print(now.hour() < 10 ? "0" : "");
